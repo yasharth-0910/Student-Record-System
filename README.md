@@ -4,17 +4,17 @@ The Student Record System will be a database-driven program designed to efficien
 
 Key functionalities of the Student Record System will Include:
 
-<b>1. Adding Student Details:</b> Users can input and store essential information about students, such as their first name, last name, roll number, CGPA, and registered courses.
+<b><u>1. Adding Student Details:</u></b> Users can input and store essential information about students, such as their first name, last name, roll number, CGPA, and registered courses.
 
-<b>2. Retrieving Student Data:</b> The system provides multiple retrieval options, allowing users to find student data by roll number, first name, or course ID.
+<b><u>2. Retrieving Student Data:</u></b> The system provides multiple retrieval options, allowing users to find student data by roll number, first name, or course ID.
 
-<b>3. Total Number of Students:</b> Users can easily ascertain the total number of students registered in a specific course, aiding in course management.
+<b><u>3. Total Number of Students:</u></b> Users can easily ascertain the total number of students registered in a specific course, aiding in course management.
 
-<b>4. Updating Student Data:</b> Existing student records can be updated using their respective roll numbers, ensuring accurate and up-to-date information.
+<b><u>4. Updating Student Data:</u></b> Existing student records can be updated using their respective roll numbers, ensuring accurate and up-to-date information.
 
-<b>5. Deleting Student Data:</b> Students' records can be securely deleted from the database, providing a mechanism to manage student records efficiently.
+<b><u>5. Deleting Student Data:</u></b> Students' records can be securely deleted from the database, providing a mechanism to manage student records efficiently.
 
-<b>6.Total Number of Students:</b> The system offers a feature to display the total number of registered students, offering insights into the student population.
+<b><u>6.Total Number of Students:</u></b> The system offers a feature to display the total number of registered students, offering insights into the student population.
 
 The user interacts with the system by selecting options, each associated with a specific operation. These options will be presented in a clear and organized manner, simplifying user navigation:
 Our current plan is including these options
