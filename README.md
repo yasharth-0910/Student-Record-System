@@ -1,5 +1,7 @@
 # Student-Record-System
 
+<h1>Project Abstract</h1>
+
 The Student Record System will be a database-driven program designed to efficiently manage and secure student data. It serves as a comprehensive tool for educational institutions to store, retrieve, update, and delete student information. This system will be constructed using basic programming concepts of C till file handling
 
 Key functionalities of the Student Record System will Include:
