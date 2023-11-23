@@ -1,1 +1,134 @@
-<h1> Project Documentation </h1>
+PROJECT DOCUMENTATION
+
+    Abstract of Project
+Aim:
+TO PREPARE A STUDENT MANAGEMENT SYSTEM
+
+About the project:
+The Student Record System will be a database-driven program designed to manage and secure student data efficiently. It is a comprehensive tool for educational institutions to store, retrieve, update, and delete student information. This system will be constructed using basic programming concepts of C till file handling.
+
+Project Objectives:
+
+In the following Program, you can
+1)	Add A new student
+2)	Show all students in a class
+3)	Search a student my its ID
+4)	Edit student details
+5)	Delete the entire database or information of a particular student
+
+Features of the Project:
+
+1. Add New Student:
+   - Allows the user to input information for a new student, including ID, Name, Email, Phone, and the number of courses.
+   - Checks for validation of input data such as ID uniqueness, length constraints, and existing email and phone numbers.
+
+2. Show All Students:
+   - Displays a tabular representation of all the students in the system, including their ID, Name, Email, Phone, and the number of courses.
+
+3. Search Student:
+   - Allows the user to search for a specific student by providing the student's ID.
+   - Displays the student's information if found, including associated courses.
+
+4. Edit Student:
+   - Enables the user to update information for an existing student.
+   - Allows modifications to the student's Name, Email, Phone, and the number of courses.
+   - Checks for validation during the update process.
+
+5. Delete Student:
+   - Permits the user to delete a specific student by providing the student's ID.
+   - Asks for confirmation before deletion and deletes associated courses.
+
+6. Delete All Students:
+   - Clears the entire list of students and associated courses.
+   - Asks for confirmation before performing the deletion.
+
+7. Menu and Navigation:
+   - Displays a menu with options for various operations.
+   - Uses a loop to keep the program running until the user chooses to exit.
+
+8. File Handling:
+   - The program does not currently incorporate file handling operations, but it can be extended to read and write student data from/to files.
+
+9. Error Handling:
+   - Implements basic error handling for input validation and displays relevant error messages.
+   - Provides an option to restart the program in case of an error.
+
+10. Exit Project:
+    - Displays a thank-you message and exits the program when the user chooses to exit.
+
+Features of the Project:
+
+(1)	Data Types
+(2)	Loops
+(3)	Switch
+(4)	Functions
+(5)	Arrays
+(6)	Strings
+(7)	Structures
+(8)	Console Input/Output
+(9)	File Input/output
+(10) Header Files as required
+     (11) Pointers
+
+Design of the Project
+The entire code is divided into one main function and 11 corresponding functions each of them serving it respective purpose.
+Those 11 functions are:
+1)	void Menu();
+2)	void AddNewStudent();
+3)	void ShowAllStudents();
+4)	int  SearchStudent(char StudentID[10]);
+5)	void EditStudent(int StudentFoundIndex);
+6)	void DeleteStudent(int StudentIndex);
+7)	void DeleteAllStudents();
+8)	int  IsAlreadyExists(char GivenLine[30],char InfoType, char StudentID[300]);
+9)	void ErrorAndRestart(char *Error[100]);
+10)	void DeleteCourseByIndex(int CourseIndex);
+11)	void DeleteStudentByIndex(int CourseIndex);
+
+A short and brief explanation of every function used
+
+1. main()
+   - Entry point of the program, contains the main loop for user interaction.
+   - Calls various functions based on user input to perform operations.
+
+2. Menu()
+   - Displays the main menu for user interaction.
+
+3. AddNewStudent()
+   - Adds a new student and associated courses after validating input.
+
+4. ShowAllStudents()
+   - Displays a formatted table of all students.
+
+5. SearchStudent(char StudentID[10])
+   - Searches for a student using their ID and displays information if found.
+
+6. EditStudent(int StudentFoundIndex)
+   - Edits information for an existing student.
+
+7. DeleteStudent(int StudentIndex)
+   - Deletes a specific student and associated courses after confirmation.
+
+8. DeleteAllStudents()
+   - Deletes all students and associated courses after confirmation.
+
+9. DeleteCourseByIndex(int CourseIndex)
+   - Deletes a course from the Courses array.
+
+10. DeleteStudentByIndex(int StudentIndex)
+    - Deletes a student from the Students array.
+
+11. IsAlreadyExists(char GivenLine[300], char InfoType, char StudentID[300])
+    - Checks if a given ID, email, or phone number already exists.
+
+12. ErrorAndRestart(char *error[100])
+    - Displays an error message and restarts the program (currently not used).
+
+13. GoBackOrExit()
+    - Asks the user to go back to the main menu or exit the program.
+
+14. ExitProject()
+    - Displays a thank-you message and exits the program.
+
+These functions collectively implement a basic Student Management System with features like adding, displaying, searching, editing, and deleting student records.
+
