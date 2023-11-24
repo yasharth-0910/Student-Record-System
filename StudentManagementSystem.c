@@ -28,12 +28,7 @@ int i,j;
 int TotalStudents = 0;
 int TotalCourse = 0;
 char StudentID[10];
-FILE *AllStudents;
-FILE *AllCourses;
-FILE *ExistingAllStudents;
-FILE *TempAllStudents;
-FILE *ExistingAllCourses;
-FILE *TempAllCourses;
+
 
 
 bool IsRunning = true;
