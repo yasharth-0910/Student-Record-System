@@ -12,7 +12,6 @@ struct StudentInfo
     char Phone[20];
     int  NumberOfCourse;
 };
-
 struct CourseInfo
 {
     char StudentID[10];
@@ -23,13 +22,10 @@ struct CourseInfo
 struct StudentInfo Students[100];
 struct CourseInfo Courses[500];
 
-
 int i,j;
 int TotalStudents = 0;
 int TotalCourse = 0;
 char StudentID[10];
-
-
 
 bool IsRunning = true;
 void Menu();
@@ -40,8 +36,6 @@ void EditStudent(int StudentFoundIndex);
 void DeleteStudent(int StudentIndex);
 void DeleteAllStudents();
 int  IsAlreadyExists(char GivenLine[30],char InfoType, char StudentID[300]);
-void ErrorAndRestart(char *Error[100]);
-void DeleteCourseByIndex(int CourseIndex);
 void DeleteStudentByIndex(int CourseIndex);
 void GoBackOrExit();
 void ExitProject();
@@ -49,8 +43,6 @@ void ExitProject();
 
 int main()
 {
-
-
     while(IsRunning)
     {
         Menu();
@@ -171,23 +163,23 @@ int main()
     }
 
     return 0;
-} // end main function
+}
 
 void Menu()
 {
     printf("\n\n\t***Student Management System Using C***\n\n");
     printf("\t\t\tMAIN MENU\n");
-    printf("\t\t=======================\n");
-    printf("\t\t[1] Add A New student.\n");
-    printf("\t\t[2] Show All students.\n");
-    printf("\t\t[3] Search A student.\n");
-    printf("\t\t[4] Edit A student.\n");
-    printf("\t\t[5] Delete A student.\n");
-    printf("\t\t[6] Delete All students.\n");
-    printf("\t\t[0] Exit the Program.\n");
-    printf("\t\t=======================\n");
+    printf("\t\t----------------------------------\n");
+    printf("\t\t 1. Add A New student.\n");
+    printf("\t\t 2. Show All students.\n");
+    printf("\t\t 3. Search A student.\n");
+    printf("\t\t 4. Edit A student.\n");
+    printf("\t\t 5. Delete A student.\n");
+    printf("\t\t 6. Delete All students.\n");
+    printf("\t\t 0. Exit the Program.\n");
+    printf("\t\t----------------------------------\n");
     printf("\t\tEnter The Choice: ");
-} // end menu
+} 
 
 void AddNewStudent()
 {
@@ -556,10 +548,6 @@ void EditStudent(int StudentFoundIndex)
                 break;
             }
         }
-        for(dc=1; dc<=OldTotalCourse; dc++)
-        {
-            DeleteCourseByIndex(FirstCourseIndex);
-        }
 
         char CourseCode[300];
         char CourseName[300];
@@ -596,10 +584,7 @@ void DeleteStudent(int StudentIndex)
             break;
         }
     }
-    for(d=1; d<=ThisStudents.NumberOfCourse; d++)
-    {
-        DeleteCourseByIndex(FirstCourseIndexs);
-    }
+
     DeleteStudentByIndex(StudentIndex);
     printf(" Student Deleted Successfully.\n\n");
     GoBackOrExit();
@@ -611,21 +596,6 @@ void DeleteAllStudents()
     TotalCourse = 0;
     printf(" All Students Deleted Successfully.\n\n");
     GoBackOrExit();
-}
-
-
-void DeleteCourseByIndex(int CourseIndex)
-{
-    int c;
-    for(c=0; c<TotalCourse-1; c++)
-    {
-        if(c>=CourseIndex)
-        {
-            Courses[c] = Courses[c+1];
-        }
-    }
-    TotalCourse--;
-
 }
 
 void DeleteStudentByIndex(int CourseIndex)
@@ -683,21 +653,6 @@ int IsAlreadyExists(char GivenLine[300],char InfoType, char StudentID[300])
         return 0;
     }
 }
-
-void ErrorAndRestart(char *error[100])
-{
-    printf("%s\n",error);
-    int i = 0;
-    printf("Restarting the program: ");
-    for(i=0; i<10; i++)
-    {
-        printf(".");
-        Sleep(500);
-    }
-    system("cls");
-    main();
-}
-
 void GoBackOrExit()
 {
     getchar();
@@ -718,7 +673,10 @@ void ExitProject()
 {
     system("cls");
 
+    printf("\n");
+
     printf("--------------Thank you for trying my program hope to see you soon ---------------------- \n");
+    printf("Program made by Yasharth Singh \n");
     exit(0);
 }
 
